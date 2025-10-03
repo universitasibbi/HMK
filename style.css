@@ -197,37 +197,16 @@ main {
   margin: 5rem auto 0;
 }
 
-video {
-  width: 100%;
-  height: auto;
+iframe {
   display: block;
   object-fit: cover;
-}
-
-.play-button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: none;
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 45px;
-  border: none;
-  border-radius: 50%;
-  width: 70px;
-  height: 70px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  transition: 0.3s ease;
 }
 
 /* ======================= PENGURUS INTI ======================= */
 #pengurusinti {
   text-align: center;
   margin: 50px auto;
-  width: 70%;
+  width: 80%;
 }
 
 #pengurusinti h2 {
@@ -235,31 +214,69 @@ video {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 2.5rem;
   color: #003366;
-  margin-bottom: 20px;
+  margin-bottom: 4.5rem;
   font-weight: bolder;
 }
 
+.pengurus-leader {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 60px;
+  gap: 50px;
+}
+
+.pengurus-leader img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 3px solid #000;
+  object-fit: cover;
+}
+
+.pengurus-leader .Nama {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.pengurus-leader .Jabatan {
+  font-size: 15px;
+  color: #555;
+  margin-top: 4px;
+}
+
 .pengurus-container {
-  margin-top: 2rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-  gap: 60px;
-  justify-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  gap: 40px;
+}
+.pengurus-container > div {
+  width: 180px;
+  text-align: center;
 }
 
 .pengurus-container img {
-  width: 120px;
-  height: 120px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
+  border: 3px solid #000;
   object-fit: cover;
 }
 
 .pengurus-container .Nama {
-  margin-top: 10px;
-  font-size: 15px;
+  margin-top: 12px;
+  font-size: 16px;
   font-weight: bold;
+  white-space: nowrap;
 }
 
+.pengurus-container .Jabatan {
+  font-size: 14px;
+  color: #444;
+  margin-top: 3px;
+}
 /* ======================= HISTORY ======================= */
 .History {
   margin-top: 6rem;
